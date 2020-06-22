@@ -1,0 +1,130 @@
+body{
+background-color:#d3d3d3;
+
+}
+
+#logo h1 {
+	font-family: Arvo, serif;
+	font-color:red;
+	}
+
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.navbar {
+    font-family: "AEnigma Scrawl";
+    font-size: 20px;
+    text-align: left;
+    height: 80px;
+    width: 100%;
+    font-weight: normal;
+    text-shadow: 1px 1px #000000;
+    padding: 0 !important;
+	margin: 0!important;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
+display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #111;
+}
+
+#cases {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  
+	
+  width: 75%;
+  
+  font-size:15px;
+  
+}
+
+#cases td, #cases th 
+{
+  border: 1px solid #ddd;
+  padding: 8px;
+  max-width:150px;
+  
+  
+  
+}
+
+#cases tr:nth-child(even)
+{
+	background-color: #c9c0bb;
+}
+
+
+
+#cases th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color:black;
+  text-transform:uppercase;
+  
+}
+input[type=text] {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#98817b;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container {
+  border-radius: 5px;
+  
+  width:50%;
+  background-color: #c9c0bb;
+  padding: 20px;
+}
