@@ -26,7 +26,7 @@ public class RESTIndexServlet extends HttpServlet{
 		Covid19CountryDAO cdetails=new Covid19CountryDAO();
 		cdetails.getConnection();
 		
-		out.write(cdetails.todaysDetailsREST("2020-06-04"));
+		out.write(cdetails.todaysDetailsREST("2020-07-01"));
 		
 			
 	}

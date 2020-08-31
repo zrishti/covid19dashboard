@@ -66,7 +66,7 @@ public class CaseServlet extends PageLayoutServlet{
 			while(rs.next())
 				{
 					try {
-					out.write("<tr>" +"<td>"+rs.getString(1)+"</td>\n");
+					out.write("<tr>" +"<a>"+"<td>"+rs.getString(1)+"</td>"+"</a>"+"\n");
 					out.write("<td>"+rs.getInt(2)+"</td>\n");
 					out.write("<td>"+rs.getInt(3)+"</td>\n");
 					out.write("<td>"+rs.getInt(4)+"</td>\n");
