@@ -3,7 +3,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
-import javax.json.*;
+//import javax.json.*;
 
 import com.zrishti.utils.*;
 
@@ -13,21 +13,17 @@ public class Covid19CountryDAO {
    
    public void getConnection()
    {
-	   String url="jdbc:mysql://localhost:3306/abc";
-	   String uname="root";
-	   String pass="";
-	   
 	   String driver="com.mysql.jdbc.Driver";
 	   
 	try {
 		Class.forName(driver);
 		con = DriverManager.getConnection(DBUtils.DBURL,DBUtils.DBUSERNAME,DBUtils.DBPASSWORD);
 	    }
-	catch (Exception e) 
-	{
-		e.printStackTrace();
-	}
-	
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+		
 	 
    }
    public ArrayList<String> getUniqueDates()
@@ -49,11 +45,7 @@ public class Covid19CountryDAO {
 	   {
 		   e.printStackTrace();
 	   }
-//	   for(int i=0;i<datelist.size();i++)
-//		{
-//		  
-//		   System.out.println(datelist.get(i));
-//		}
+
 	return datelist;
    }
    
@@ -310,6 +302,27 @@ public class Covid19CountryDAO {
 		return ab.toString();
 	   
    }
+   
+   
+   
+   public ResultSet getRS(String query)
+   {	
+	   
+	   Statement st;
+	   ResultSet rs;
+	   try {
+		   st=con.createStatement();
+	       rs = st.executeQuery(query);
+	       return rs;
+
+	       }
+	   catch(Exception e)
+	   {
+		   e.printStackTrace();
+	   }
+	   return null;
+   }
+   
    
    
 public static void main(String[] args) {
