@@ -2,10 +2,8 @@
 
 <%
 ArrayList<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
-String ctryname=request.getParameter("search");
+String ctryname=request.getParameter("id");
 
-String ss =request.getParameter("id");
-//out.println("my value" + ss);
 
 
 String query="select cdate,cname,tcases,ncases,tdeaths,ndeaths,trecover from cases where cname='"+ ctryname +"'";
@@ -51,7 +49,7 @@ while(rs.next()){
 		
 					
 }
-out.println("<div class='subtitle'>Search results for:"+ctryname+" </div>");
+out.println("<div class='subtitle'>Cases for:"+ctryname+" </div>");
 for(int i=0;i<list.size();i++)
 {
   	    			
