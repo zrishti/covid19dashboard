@@ -1,97 +1,171 @@
 body{
-background-color:#d3d3d3;
+background-color:#EEEEEE;
+margin:0;
+font-family: europa;
+font-size: 18px;
 
 }
 
-#logo h1 {
-	font-family: Arvo, serif;
-	font-color:red;
-	}
-
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
+.subtitle
+{
+	
+	text-transform: uppercase;
+	padding-left : 20px;
+	padding-bottom : 20px;
+	margin-left: 80px;
+	margin-top:30px;
+	font-size: 1.2 rem;
+	 font-weight: 600;
 }
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+#date
+{
+	  padding: 12px 12px;
+	float:right;
+	padding:20px;
+	margin-right:85px;
+	text-transform:uppercase;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.menu
+{
+	text-transform: uppercase;
+	margin-left: 80px;
 }
+
 .navbar {
-    font-family: "AEnigma Scrawl";
-    font-size: 20px;
     text-align: left;
-    height: 80px;
+    height: 70px;
     width: 100%;
-    font-weight: normal;
-    text-shadow: 1px 1px #000000;
-    padding: 0 !important;
-	margin: 0!important;
+    font-weight: 400;
+    background-color: #191919;
+    
+
 }
 .navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  height:60px;
+  color: white;
+   
 }
 
 .navbar ul li {
-  float: left;
+  margin-top:8px;
+  
 }
 
 .navbar ul li a {
-display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 14px 14px;
+  
+  float:left;
+   
+}
+
+a:link {
+ color:black;
+  text-decoration:none;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: green;;
+  font-weight:bold;
 }
 
 .navbar ul li a:hover {
-  background-color: #111;
+	
+  background-color:#5cc72a;
+  padding: 14px 14px;
+  text-decoration: none;
+  
+}
+#search
+{
+	float:right;
+	width:450px;
+	
+	
+}
+
+select
+{
+	position: relative;
+    display: inline-block;
+    text-align:center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	
+	padding:11px 11px;
+	
+  display: inline-block;
+  
+}
+
+ #datep
+{
+	
+	background-color:#FAFAFA;
+}
+
+#logoimg
+{
+	float:left;
+	height:60px;
+	
+	
+}
+img{
+	
+}
+
+
+#my_dataviz {
+	
+	margin-left: 80px;
+		margin-top: 30px;
+  
 }
 
 #cases {
-  font-family: Arial, Helvetica, sans-serif;
+  
   border-collapse: collapse;
-  
-	
-  width: 75%;
-  
-  font-size:15px;
-  
+   width: 85%;
+   margin-left: auto;
+  margin-right: auto;
+   font-size: 1rem;
+    border-radius: 18px;
+   border: 0px solid ;
+    
 }
+
 
 #cases td, #cases th 
 {
   border: 1px solid #ddd;
   padding: 8px;
   max-width:150px;
-  
-  
-  
+   
+}
+
+ #cases th 
+{
+	background-color: #E1E1E1;;  
+}
+
+
+#cases tr:nth-child(odd)
+{
+	background-color: #FAFAFA;
 }
 
 #cases tr:nth-child(even)
 {
-	background-color: #c9c0bb;
+	background-color: #FFFFFF;
 }
-
 
 
 #cases th {
@@ -100,10 +174,15 @@ display: block;
   text-align: left;
   color:black;
   text-transform:uppercase;
+  cursor: pointer;
+  position: relative;
   
 }
+
+
+ 
 input[type=text] {
-  width: 50%;
+  width: 30%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -111,20 +190,23 @@ input[type=text] {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  margin-right:20px;
+  float:right;
 }
 
 input[type=submit] {
-  background-color:#98817b;
-  color: black;
-  padding: 12px 20px;
+  background-color:#83b633;
+  color: white;
+  padding: 12px 12px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  background-color: #5cc72a;
 }
 .container {
   border-radius: 5px;
   
   width:50%;
   background-color: #c9c0bb;
-  padding: 20px;
+  padding: 14px;
 }
